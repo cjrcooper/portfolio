@@ -1,0 +1,341 @@
+@font-face {
+  font-family: Gogoia;
+  src: url('../fonts/GOGOIA-Deco.otf');
+}
+
+@font-face {
+  font-family: Simplifica;
+  src: url('../fonts/SIMPLIFICA-Typeface.ttf');
+}
+
+body {
+  font-family: "freightsans_regular","Helvetica Neue","Helvetica","Arial",sans-serif;
+  background-color: #F5F5F5;
+  height: auto;
+}
+
+#main {
+  border: 20px solid #FFFFFF;
+}
+
+#home {
+  height: 90vh;
+  width: 100%;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#projects {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  font-family: Gogoia;
+  background-color: #16A6B6;
+  position: relative;
+}
+
+nav {
+  margin: 25px;
+  display: none;
+}
+
+.nav-container{
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-container > .home, .about, .interests, .contact  {
+  display: inline-block;
+  font-size: 25pt;
+  font-family: Gogoia;
+  font-weight: bolder;
+  padding: 30px;
+  margin: 0px;
+  transition: all 0.5s ease;
+  color: #16a6b6;
+}
+
+.home > a, .about > a, .interests > a, .contact > a {
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.home:hover, .about:hover, .interests:hover, .contact:hover  {
+  text-decoration: underline;
+   transition: all 0.3s ease;
+   color: #16a6b6;
+}
+
+.home:hover > a, .about:hover > a, .interests:hover > a, .contact:hover > a {
+  color: #16a6b6;
+  transition: all 0.3s ease;
+}
+
+.sml-logo > img, .md-logo > img{
+  height: 150px;
+}
+
+.sml-logo {
+  display: block;
+}
+.md-logo {
+  padding: 30px;
+  display: none;
+}
+.seperator {
+  display: none;
+}
+
+.html {
+  color: #16a6b6;
+}
+
+.javascript {
+  color: #16a6b6;
+}
+
+.backbone {
+  color: #16a6b6;
+}
+
+.devicons {
+  font-size: 20pt;
+}
+
+.name-tag-line {
+  text-align: center;
+  font-family: 'Bitter', serif;
+  margin-top: 100px;
+  display: none;
+}
+
+.name-tag-line > h1{
+  font-size: 50pt;
+}
+
+
+.tag-line {
+  color: rgba(214, 0, 0, 0.35);
+}
+
+.line-seperator-container {
+  width: 100%;
+  height: 1px;
+  text-align: center;
+}
+.line {
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+}
+
+.skills {
+  text-align: center;
+  margin-top: 370px;
+  font-family: Gogoia;
+  display: none;
+}
+
+
+.about-sml-container-br {
+  display: block
+}
+
+.about-me {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: auto;
+}
+
+.about-title {
+  font-family: Gogoia;
+}
+
+.about-sml-container {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+
+
+.sml-1 {
+  background-color: #ee6557;
+}
+
+.sml-1 > h1, .sml-2 > h1, .sml-3 > h1, .sml-4 > h1, .sml-5 > h1, .sml-6 > h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Gogoia;
+}
+
+.sml-2 > h1, .sml-4 > h1 {
+  color: #FFFFFF;
+  text-shadow: 3px 1px 1px #000000;
+}
+
+.sml-2 {
+  background-image: url('../images/basketball.jpg');
+  background-size: 500px 320px;
+  background-position: -50px;
+  transition: all 0.050s ease;
+}
+
+.sml-2:hover {
+  background-size: 600px 420px;
+  background-position: -100px;
+}
+
+.sml-3 {
+  background-color: #16A6B6;
+}
+.sml-4 {
+  background-image: url('../images/mountain3.jpg');
+  background-size: 300px 300px;
+  transition: all 0.050s ease;
+}
+.sml-4:hover {
+  background-size: 400px 400px;
+  background-position: -50px;
+}
+
+.sml-5 {
+  background-color: #b3b3b3;
+}
+.sml-6 {
+  background-image: url('../images/starcraft1.jpg');
+  background-size: 500px 300px;
+  transition: all 0.050s ease;
+}
+.sml-6:hover {
+  background-size: 600px 400px;
+  background-position: -50px;
+}
+
+
+
+
+.my-projects {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-family: Gogoia;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects-title {
+  font-size: 50pt;
+}
+
+.project-sml-container > h4 {
+  font-family: 'Bitter', serif;
+}
+
+
+.projects-title {
+  font-size: 50pt;
+}
+
+.project-sml-container > h4 {
+  font-family: 'Bitter', serif;
+}
+
+
+.contact-links {
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-links > a {
+  color: #333;
+}
+
+
+
+
+@media (max-width: 643px) {
+  .about-sml-container {
+    height: 500px;
+    width: 130px;
+  }
+
+  .sml-2, .sml-4, .sml-6 {
+    background-size: 800px 500px;
+  }
+
+  .sml-2 {
+    background-position: -250px;
+  }
+}
+
+
+@media (min-width: 865px) {
+  .sml-logo {
+    display: none;
+  }
+  .md-logo {
+    display: inline-block;
+  }
+  .skills {
+    margin-top: 325px;
+  }
+}
+
+@media (max-width: 700px) {
+  .seperator {
+    display: block;
+  }
+  .skills {
+    margin-top: 150px;
+  }
+  .nav-container > .home, .about, .interests, .contact {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 665px){
+  .skills {
+    margin-top: 150px !important;
+  }
+}
+
+@media (max-width: 865px){
+  .skills {
+    margin-top: 280px;
+  }
+}
+
+
+@media (max-width: 1132px) {
+  .square-break {
+    display: block;
+  }
+}
+
+
+@media (max-width: 975px) {
+  .about-sml-container-br {
+    display: none;
+  }
+}
