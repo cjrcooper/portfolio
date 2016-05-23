@@ -4,16 +4,24 @@ $(document).ready(function(){
   $('.name-tag-line').fadeIn(1000)
   $('.skills, nav').fadeIn(2000);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   var bodyHeight = $('body').height();
   var sectionHeight = bodyHeight/4;
   console.log(sectionHeight)
 
+<<<<<<< HEAD
   $('#scroll').on('click', function(){
     $("html, body").animate({
       scrollTop: sectionHeight + 'px'
     });
   });
 
+=======
+>>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 
   $('.about').on('click', function(){
     $("html, body").animate({
@@ -33,6 +41,7 @@ $(document).ready(function(){
     });
   })
 });
+<<<<<<< HEAD
 
 
 
@@ -69,3 +78,5 @@ x();
   //   $('.sml-3').insertBefore('.about-sml-container-br');
   // }
 });
+=======
+>>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
