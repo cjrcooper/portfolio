@@ -19,24 +19,28 @@ body {
 }
 
 #home {
-  height: 90vh;
+  min-height: 90vh;
+  height: auto;
   width: 100%;
 }
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   position: relative;
 }
 
 #projects {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   position: relative;
 }
 
 #contact {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   text-align: center;
   font-family: Gogoia;
@@ -51,7 +55,6 @@ nav {
 
 .nav-container{
   text-align: center;
-  padding: 10px;
 }
 
 .nav-container > .home, .about, .interests, .contact  {
@@ -59,10 +62,10 @@ nav {
   font-size: 25pt;
   font-family: Gogoia;
   font-weight: bolder;
-  padding: 30px;
+  padding: 10px;
   margin: 0px;
-  transition: all 0.5s ease;
   color: #16a6b6;
+  opacity: 0;
 }
 
 .home > a, .about > a, .interests > a, .contact > a {
@@ -85,12 +88,15 @@ nav {
   height: 150px;
 }
 
+.main-container {
+  opacity: 0;
+}
+
 .sml-logo {
   display: block;
 }
 .md-logo {
   padding: 30px;
-  display: none;
 }
 .seperator {
   display: none;
@@ -115,12 +121,7 @@ nav {
 .name-tag-line {
   text-align: center;
   font-family: 'Bitter', serif;
-  margin-top: 100px;
   display: none;
-}
-
-.name-tag-line > h1{
-  font-size: 50pt;
 }
 
 
@@ -141,9 +142,72 @@ nav {
 
 .skills {
   text-align: center;
-  margin-top: 370px;
   font-family: Gogoia;
   display: none;
+  display: block;
+  padding-top: 20px;
+}
+
+.skills > h1 {
+  font-size: 20pt;
+}
+
+#scroll{
+  text-align: center;
+  cursor: pointer;
+  width: auto;
+}
+
+.arrow {
+  height: 10px;
+}
+
+
+.arrow:nth-child(1) > span {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s;
+}
+
+.arrow:nth-child(2) > span {
+  animation-delay:-.5s;
+  -webkit-animation-delay:-.5s;
+}
+
+.arrow:nth-child(3) > span {
+  animation-delay:0s;
+  -webkit-animation-delay:0s;
+}
+
+@keyframes fadeinout {
+  0% {opacity:0}
+  25% {opacity:1}
+  75% {opacity:0}
+  100% {opacity:0}
+}
+
+@-webkit-keyframes fadeinout {
+  0% {opacity:0}
+  25% {opacity:1}
+  75% {opacity:0}
+  100% {opacity:0}
+}
+
+.arrow > span {
+  height: 1px;
+  width: 15px;
+  background-color: #EA9F9F;
+  display: inline-block;
+  margin-left: -5px;
+  -webkit-animation: fadeinout 2s infinite;
+  animation: fadeinout 2s infinite;
+}
+
+.arrow > span:nth-child(1){
+  transform: rotate(45deg);
+}
+
+.arrow > span:nth-child(2){
+  transform: rotate(-45deg);
 }
 
 
@@ -153,18 +217,17 @@ nav {
 
 .about-me {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   height: auto;
 }
 
 .about-title {
+  padding: 10px;
   font-family: Gogoia;
 }
 
 .about-sml-container {
-  height: 300px;
-  width: 300px;
+  height: 275px;
+  width: 275px;
   display: inline-block;
   margin: 0px;
   position: relative;
@@ -190,28 +253,19 @@ nav {
 }
 
 .sml-2 {
-  background-image: url('../images/basketball.jpg');
+  background-image: url('../images/basketball.png');
   background-size: 500px 320px;
   background-position: -50px;
   transition: all 0.050s ease;
-}
-
-.sml-2:hover {
-  background-size: 600px 420px;
-  background-position: -100px;
 }
 
 .sml-3 {
   background-color: #16A6B6;
 }
 .sml-4 {
-  background-image: url('../images/mountain3.jpg');
+  background-image: url('../images/mountain3.png');
   background-size: 300px 300px;
   transition: all 0.050s ease;
-}
-.sml-4:hover {
-  background-size: 400px 400px;
-  background-position: -50px;
 }
 
 .sml-5 {
@@ -222,31 +276,44 @@ nav {
   background-size: 500px 300px;
   transition: all 0.050s ease;
 }
-.sml-6:hover {
-  background-size: 600px 400px;
-  background-position: -50px;
-}
 
 
 
 
 .my-projects {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   font-family: Gogoia;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .projects-title {
   font-size: 50pt;
 }
 
+.project-image {
+  border: 2px solid #000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px #868686;
+  height: 250px;
+  width: 350px;
+}
+
+.project-sml-container {
+  display: inline-block;
+  width: 32%;
+}
+
 .project-sml-container > h4 {
   font-family: 'Bitter', serif;
+}
+
+.github-view {
+  color: #16A6B6;
+  font-size: 21pt;
 }
 
 
@@ -271,68 +338,43 @@ nav {
   color: #333;
 }
 
-@media (max-width: 643px) {
+@media (min-width: 480px){
+
+}
+
+
+@media (min-width: 768px) {
   .about-sml-container {
-    height: 500px;
-    width: 130px;
-  }
-
-  .sml-2, .sml-4, .sml-6 {
-    background-size: 800px 500px;
-  }
-
-  .sml-2 {
-    background-position: -250px;
-  }
-}
-
-
-@media (min-width: 865px) {
-  .sml-logo {
-    display: none;
-  }
-  .md-logo {
-    display: inline-block;
-  }
-  .skills {
-    margin-top: 325px;
-  }
-}
-
-@media (max-width: 700px) {
-  .seperator {
-    display: block;
-  }
-  .skills {
-    margin-top: 150px;
+    width: 22%;
   }
   .nav-container > .home, .about, .interests, .contact {
     padding: 10px;
   }
-}
 
-@media (max-width: 665px){
+  .name-tag-line > h1 {
+    font-size: 20pt;
+  }
+
+  .name-tag-line > h3 {
+    font-size: 15pt;
+  }
+
   .skills {
-    margin-top: 150px !important;
+    padding-top: 50px;
+  }
+
+  .skills > h1{
+    font-size: 20pt;
   }
 }
 
-@media (max-width: 865px){
-  .skills {
-    margin-top: 280px;
-  }
+
+@media (min-width: 992px) {
+
 }
 
-
-@media (max-width: 1132px) {
+@media (min-width: 1132px) {
   .square-break {
     display: block;
-  }
-}
-
-
-@media (max-width: 975px) {
-  .about-sml-container-br {
-    display: none;
   }
 }
