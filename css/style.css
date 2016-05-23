@@ -19,44 +19,28 @@ body {
 }
 
 #home {
-<<<<<<< HEAD
   min-height: 90vh;
   height: auto;
-=======
-  height: 90vh;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   width: 100%;
 }
 
 #about {
-<<<<<<< HEAD
   min-height: 100vh;
   height: auto;
-=======
-  height: 100vh;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   width: 100%;
   position: relative;
 }
 
 #projects {
-<<<<<<< HEAD
   min-height: 100vh;
   height: auto;
-=======
-  height: 100vh;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   width: 100%;
   position: relative;
 }
 
 #contact {
-<<<<<<< HEAD
   min-height: 100vh;
   height: auto;
-=======
-  height: 100vh;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   width: 100%;
   text-align: center;
   font-family: Gogoia;
@@ -71,10 +55,6 @@ nav {
 
 .nav-container{
   text-align: center;
-<<<<<<< HEAD
-=======
-  padding: 10px;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 }
 
 .nav-container > .home, .about, .interests, .contact  {
@@ -82,17 +62,10 @@ nav {
   font-size: 25pt;
   font-family: Gogoia;
   font-weight: bolder;
-<<<<<<< HEAD
   padding: 10px;
   margin: 0px;
   color: #16a6b6;
   opacity: 0;
-=======
-  padding: 30px;
-  margin: 0px;
-  transition: all 0.5s ease;
-  color: #16a6b6;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 }
 
 .home > a, .about > a, .interests > a, .contact > a {
@@ -115,22 +88,15 @@ nav {
   height: 150px;
 }
 
-<<<<<<< HEAD
 .main-container {
   opacity: 0;
 }
 
-=======
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 .sml-logo {
   display: block;
 }
 .md-logo {
   padding: 30px;
-<<<<<<< HEAD
-=======
-  display: none;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 }
 .seperator {
   display: none;
@@ -155,20 +121,9 @@ nav {
 .name-tag-line {
   text-align: center;
   font-family: 'Bitter', serif;
-<<<<<<< HEAD
   display: none;
 }
 
-=======
-  margin-top: 100px;
-  display: none;
-}
-
-.name-tag-line > h1{
-  font-size: 50pt;
-}
-
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 
 .tag-line {
   color: rgba(214, 0, 0, 0.35);
@@ -187,7 +142,6 @@ nav {
 
 .skills {
   text-align: center;
-<<<<<<< HEAD
   font-family: Gogoia;
   display: none;
   display: block;
@@ -254,11 +208,6 @@ nav {
 
 .arrow > span:nth-child(2){
   transform: rotate(-45deg);
-=======
-  margin-top: 370px;
-  font-family: Gogoia;
-  display: none;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 }
 
 
@@ -268,30 +217,17 @@ nav {
 
 .about-me {
   text-align: center;
-<<<<<<< HEAD
-=======
-  padding-top: 200px;
-  padding-bottom: 200px;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   height: auto;
 }
 
 .about-title {
-<<<<<<< HEAD
   padding: 10px;
-=======
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   font-family: Gogoia;
 }
 
 .about-sml-container {
-<<<<<<< HEAD
   height: 275px;
   width: 275px;
-=======
-  height: 300px;
-  width: 300px;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   display: inline-block;
   margin: 0px;
   position: relative;
@@ -317,43 +253,20 @@ nav {
 }
 
 .sml-2 {
-<<<<<<< HEAD
   background-image: url('../images/basketball.png');
-=======
-  background-image: url('../images/basketball.jpg');
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   background-size: 500px 320px;
   background-position: -50px;
   transition: all 0.050s ease;
 }
 
-<<<<<<< HEAD
-=======
-.sml-2:hover {
-  background-size: 600px 420px;
-  background-position: -100px;
-}
-
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 .sml-3 {
   background-color: #16A6B6;
 }
 .sml-4 {
-<<<<<<< HEAD
   background-image: url('../images/mountain3.png');
   background-size: 300px 300px;
   transition: all 0.050s ease;
 }
-=======
-  background-image: url('../images/mountain3.jpg');
-  background-size: 300px 300px;
-  transition: all 0.050s ease;
-}
-.sml-4:hover {
-  background-size: 400px 400px;
-  background-position: -50px;
-}
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 
 .sml-5 {
   background-color: #b3b3b3;
@@ -363,40 +276,24 @@ nav {
   background-size: 500px 300px;
   transition: all 0.050s ease;
 }
-<<<<<<< HEAD
-=======
-.sml-6:hover {
-  background-size: 600px 400px;
-  background-position: -50px;
-}
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 
 
 
 
 .my-projects {
   text-align: center;
-<<<<<<< HEAD
-=======
-  padding-top: 200px;
-  padding-bottom: 200px;
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   font-family: Gogoia;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-<<<<<<< HEAD
   width: 100%;
-=======
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 }
 
 .projects-title {
   font-size: 50pt;
 }
 
-<<<<<<< HEAD
 .project-image {
   border: 2px solid #000;
   border-radius: 2px;
@@ -410,20 +307,15 @@ nav {
   width: 32%;
 }
 
-=======
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 .project-sml-container > h4 {
   font-family: 'Bitter', serif;
 }
 
-<<<<<<< HEAD
 .github-view {
   color: #16A6B6;
   font-size: 21pt;
 }
 
-=======
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
 
 .projects-title {
   font-size: 50pt;
@@ -446,7 +338,6 @@ nav {
   color: #333;
 }
 
-<<<<<<< HEAD
 @media (min-width: 480px){
 
 }
@@ -483,76 +374,7 @@ nav {
 }
 
 @media (min-width: 1132px) {
-=======
-
-
-
-@media (max-width: 643px) {
-  .about-sml-container {
-    height: 500px;
-    width: 130px;
-  }
-
-  .sml-2, .sml-4, .sml-6 {
-    background-size: 800px 500px;
-  }
-
-  .sml-2 {
-    background-position: -250px;
-  }
-}
-
-
-@media (min-width: 865px) {
-  .sml-logo {
-    display: none;
-  }
-  .md-logo {
-    display: inline-block;
-  }
-  .skills {
-    margin-top: 325px;
-  }
-}
-
-@media (max-width: 700px) {
-  .seperator {
-    display: block;
-  }
-  .skills {
-    margin-top: 150px;
-  }
-  .nav-container > .home, .about, .interests, .contact {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 665px){
-  .skills {
-    margin-top: 150px !important;
-  }
-}
-
-@media (max-width: 865px){
-  .skills {
-    margin-top: 280px;
-  }
-}
-
-
-@media (max-width: 1132px) {
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
   .square-break {
     display: block;
   }
 }
-<<<<<<< HEAD
-=======
-
-
-@media (max-width: 975px) {
-  .about-sml-container-br {
-    display: none;
-  }
-}
->>>>>>> ca150c0331babdd64613d09dc70e521ab8baff72
